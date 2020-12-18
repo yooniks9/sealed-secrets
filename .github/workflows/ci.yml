@@ -72,8 +72,7 @@ jobs:
     needs: container
     strategy:
       matrix:
-        k8s: ["1.15.11", "1.16.13"]
-#        k8s: ["1.15.11"]
+        k8s: ["1.16.13", "1.17.15"]
     env:
       MINIKUBE_WANTUPDATENOTIFICATION: "false"
       MINIKUBE_WANTREPORTERRORPROMPT: "false"
